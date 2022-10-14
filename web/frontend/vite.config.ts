@@ -30,14 +30,14 @@ if (host === 'localhost') {
 	hmrConfig = {
 		protocol: 'ws',
 		host: 'localhost',
-		port: 64999,
-		clientPort: 64999,
+		port: process.env.HMR_PORT,
+		clientPort: process.env.HMR_PORT,
 	}
 } else {
 	hmrConfig = {
 		protocol: 'wss',
 		host: host,
-		port: process.env.FRONTEND_PORT,
+		port: process.env.HMR_PORT,
 		clientPort: 443,
 	}
 }
