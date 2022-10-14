@@ -1,0 +1,15 @@
+{
+  "semi": false,
+  "singleQuote": true,
+  "arrowParens": "avoid",
+  "tabWidth": 4,
+  "useTabs": true,
+  "bracketSameLine": false,
+  "singleAttributePerLine": true,
+  "overrides": [
+    {
+      "files": ["*.yml", "*.yaml"],
+      "options": { "useTabs": false, "tabWidth": 2 }
+    }
+  ]
+}
