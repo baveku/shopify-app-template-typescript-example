@@ -4,7 +4,7 @@
 	"license": "UNLICENSED",
 	"scripts": {
 		"debug": "node --inspect-brk index.js",
-		"dev": "cross-env NODE_ENV=development nodemon --exec node --loader ts-node/esm index.ts --ignore ./frontend",
+		"dev": "cross-env NODE_ENV=development nodemon --exec node --loader ts-node/esm index.ts --ignore ./frontend --experimental-loader",
 		"serve": "cross-env NODE_ENV=production node index.js"
 	},
 	"engines": {

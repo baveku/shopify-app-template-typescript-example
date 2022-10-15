@@ -1,0 +1,15 @@
+{
+	"extends": [
+		// add more generic rulesets here, such as:
+		// 'eslint:recommended',
+		"plugin:vue/vue3-recommended",
+		"prettier"
+	],
+	"rules": {
+		"vue/no-unused-vars": "off",
+		"@typescript-eslint/no-unused-vars": [
+			"error",
+			{ "varsIgnorePattern": "^_", "argsIgnorePattern": "^_" }
+		]
+	}
+}

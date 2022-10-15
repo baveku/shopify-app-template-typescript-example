@@ -3,7 +3,15 @@ import { dirname } from 'path'
 import { fileURLToPath } from 'url'
 import https from 'https'
 import vue from '@vitejs/plugin-vue'
+import tsconfigPaths from 'vite-tsconfig-paths'
+import VueRouter from 'unplugin-vue-router/vite'
 
+console.log(
+	process.env.HOST,
+	process.env.BACKEND_PORT,
+	process.env.FRONTEND_PORT,
+	process.env.HMR_PORT
+)
 if (
 	process.env.npm_lifecycle_event === 'build' &&
 	!process.env.CI &&
@@ -44,7 +52,7 @@ if (host === 'localhost') {
 
 export default defineConfig({
 	root: dirname(fileURLToPath(import.meta.url)),
-	plugins: [vue()],
+	plugins: [vue(), tsconfigPaths(), VueRouter({})],
 	define: {
 		'process.env.SHOPIFY_API_KEY': JSON.stringify(
 			process.env.SHOPIFY_API_KEY

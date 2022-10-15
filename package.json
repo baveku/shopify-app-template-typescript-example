@@ -5,6 +5,7 @@
 	"license": "UNLICENSED",
 	"scripts": {
 		"shopify": "shopify",
+		"sync-env": "shopify app env pull",
 		"build": "shopify app build",
 		"dev": "shopify app dev",
 		"info": "shopify app info",
