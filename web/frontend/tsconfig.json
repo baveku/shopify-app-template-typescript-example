@@ -16,7 +16,8 @@
 		"allowSyntheticDefaultImports": true,
 		"baseUrl": ".",
 		"paths": {
-			"@": ["./src"],
+			"@app": ["./src"],
+			"@app/*": ["./src/*"],
 			"@pages": ["./src/pages"]
 		}
 	},

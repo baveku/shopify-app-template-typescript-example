@@ -5,8 +5,8 @@ const routes: RouteRecordRaw[] = [
 	{ path: '/home', name: 'Home', component: HomeVue },
 	{ path: '/settings', name: 'Settings', component: SettingsVue },
 ]
-
-export default VueRouter.createRouter({
+const router = VueRouter.createRouter({
 	routes: routes,
 	history: VueRouter.createWebHashHistory(),
 })
+export default router

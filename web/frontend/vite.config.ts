@@ -52,7 +52,11 @@ if (host === 'localhost') {
 
 export default defineConfig({
 	root: dirname(fileURLToPath(import.meta.url)),
-	plugins: [vue(), tsconfigPaths(), VueRouter({})],
+	plugins: [
+		vue(),
+		tsconfigPaths({ extensions: ['ts', 'vue', 'js'] }),
+		VueRouter({}),
+	],
 	define: {
 		'process.env.SHOPIFY_API_KEY': JSON.stringify(
 			process.env.SHOPIFY_API_KEY
