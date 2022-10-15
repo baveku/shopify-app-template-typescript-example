@@ -1,2 +1,4 @@
-export * as HomeVue from './Home.vue'
-export * as SettingsVue from './Settings.vue'
+import HomePage from './Home.vue'
+import SettingsPage from './Settings.vue'
+
+export { HomePage, SettingsPage }
